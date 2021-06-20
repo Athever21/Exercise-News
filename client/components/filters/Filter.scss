@@ -1,0 +1,37 @@
+@import "../../Vars.scss";
+
+.filter-container {
+  width: 80%;
+  display: flex;
+  padding: 1rem 0;
+  margin: 0 auto;
+
+  select {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: $select;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    color: $font;
+  }
+
+  label {
+    font-size: 1.3rem;
+  }
+
+  #page-sizes {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .filter-container {
+    flex-direction: column;
+
+    #page-sizes {
+      margin-top: 0.5rem;
+      margin-left: 0;
+    }
+  }
+}
